@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+    <metadata minClientVersion="2.5">
+        <id>CppCxHelper</id>
+        <version>0.9.0</version>
+        <title>C++/CX Helper</title>
+        <authors>mntone</authors>
+        <owners>mntone</owners>
+        <licenseUrl>https://github.com/mntone/CppCx-Helper/blob/master/license.md</licenseUrl>
+        <projectUrl>https://github.com/mntone/CppCx-Helper</projectUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <description>You can treat Windows::Foundation::DateTime/TimeSpan (and C/C++ types) more easily. You can also treat Win32 POINT, SIZE, RECT when define USE_WIN32_INTEROP.</description>
+        <summary>This helps you when developing in C++/CX.</summary>
+        <releaseNotes>First NuGet version.</releaseNotes>
+        <copyright>Copyright (c) 2014, mntone. All rights reserved.</copyright>
+        <language>en-US</language>
+        <tags>WinRT Windows WindowsClient WindowsPhone mntone 8.1 C++/CX Helper</tags>
+    </metadata>
+    <files>
+        <file src="build\native\CppCxHelper.targets" target="build\native\CppCxHelper.targets" />
+        <file src="lib\win81\ARM\Mntone.Helper.dll" target="lib\win81\ARM\Mntone.Helper.dll" />
+        <file src="lib\win81\ARM\Mntone.Helper.pri" target="lib\win81\ARM\Mntone.Helper.pri" />
+        <file src="lib\win81\ARM\Mntone.Helper.winmd" target="lib\win81\ARM\Mntone.Helper.winmd" />
+        <file src="lib\win81\x64\Mntone.Helper.dll" target="lib\win81\x64\Mntone.Helper.dll" />
+        <file src="lib\win81\x64\Mntone.Helper.pri" target="lib\win81\x64\Mntone.Helper.pri" />
+        <file src="lib\win81\x64\Mntone.Helper.winmd" target="lib\win81\x64\Mntone.Helper.winmd" />
+        <file src="lib\win81\x86\Mntone.Helper.dll" target="lib\win81\x86\Mntone.Helper.dll" />
+        <file src="lib\win81\x86\Mntone.Helper.pri" target="lib\win81\x86\Mntone.Helper.pri" />
+        <file src="lib\win81\x86\Mntone.Helper.winmd" target="lib\win81\x86\Mntone.Helper.winmd" />
+        <file src="lib\wpa81\ARM\Mntone.Helper.dll" target="lib\wpa81\ARM\Mntone.Helper.dll" />
+        <file src="lib\wpa81\ARM\Mntone.Helper.pri" target="lib\wpa81\ARM\Mntone.Helper.pri" />
+        <file src="lib\wpa81\ARM\Mntone.Helper.winmd" target="lib\wpa81\ARM\Mntone.Helper.winmd" />
+        <file src="lib\wpa81\x86\Mntone.Helper.dll" target="lib\wpa81\x86\Mntone.Helper.dll" />
+        <file src="lib\wpa81\x86\Mntone.Helper.pri" target="lib\wpa81\x86\Mntone.Helper.pri" />
+        <file src="lib\wpa81\x86\Mntone.Helper.winmd" target="lib\wpa81\x86\Mntone.Helper.winmd" />
+        <file src="license.md" target="license.md" />
+    </files>
+</package>

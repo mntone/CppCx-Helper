@@ -2,6 +2,9 @@
 /obj
 /ipch
 /packages
+/nuget/data/build/native/include
+/nuget/data/lib
+/nuget/data/license.md
 Generated Files
 *.opensdf
 *.sdf

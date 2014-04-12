@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup Label="Globals">
+		<MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+		<HasSharedItems>true</HasSharedItems>
+		<ItemsProjectGuid>{6ebe1af8-e59f-438c-84ca-6a0dcbfdc29c}</ItemsProjectGuid>
+		<ItemsRootNamespace>Mntone.Helper</ItemsRootNamespace>
+		<ItemsProjectName>Mntone.Helper.Shared</ItemsProjectName>
+		<CodeSharingProject>248F659F-DAC5-46E8-AC09-60EC9FC95053</CodeSharingProject>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+		</ClCompile>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ClInclude Include="$(MSBuildThisFileDirectory)DateTimeHelper.h" />
+		<ClInclude Include="$(MSBuildThisFileDirectory)include\DateTimeReference.h" />
+		<ClInclude Include="$(MSBuildThisFileDirectory)include\mnhelper.h" />
+		<ClInclude Include="$(MSBuildThisFileDirectory)include\PointReference.h" />
+		<ClInclude Include="$(MSBuildThisFileDirectory)include\RectReference.h" />
+		<ClInclude Include="$(MSBuildThisFileDirectory)include\SizeReference.h" />
+		<ClInclude Include="$(MSBuildThisFileDirectory)include\TimeSpanReference.h" />
+		<ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+		<ClInclude Include="$(MSBuildThisFileDirectory)TimeSpanHelper.h" />
+	</ItemGroup>
+	<ItemGroup>
+		<ClCompile Include="$(MSBuildThisFileDirectory)DataTimeHelper.cpp" />
+		<ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
+			<PrecompiledHeader>Create</PrecompiledHeader>
+		</ClCompile>
+		<ClCompile Include="$(MSBuildThisFileDirectory)TimeSpanHelper.cpp" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectCapability Include="SourceItemsFromImports" />
+	</ItemGroup>
+</Project>

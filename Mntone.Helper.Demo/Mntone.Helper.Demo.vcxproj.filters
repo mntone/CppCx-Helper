@@ -2,11 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClInclude Include="pch.h" />
-    <ClInclude Include="include\PointReference.h" />
-    <ClInclude Include="include\RectReference.h" />
     <ClInclude Include="include\SizeReference.h" />
-    <ClInclude Include="include\TimeSpanReference.h" />
-    <ClInclude Include="include\DateTimeReference.h" />
     <ClInclude Include="include\mnhelper.h" />
   </ItemGroup>
   <ItemGroup>

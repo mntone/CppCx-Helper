@@ -23,7 +23,7 @@ public:
 		SystemTimeToFileTime( &value, &filetime );
 		dateTime_ = *reinterpret_cast<const int64*>( &filetime );
 	}
-	explicit DateTimeReference( const FILETIME& value )
+	explicit DateTimeReference( FILETIME value )
 	{
 		dateTime_ = *reinterpret_cast<const int64*>( &value );
 	}

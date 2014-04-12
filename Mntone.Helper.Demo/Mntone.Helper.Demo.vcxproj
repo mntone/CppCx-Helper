@@ -13,7 +13,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{27255F0E-9C7F-476D-8425-03D368205179}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>MntoneCppCxHelper</RootNamespace>
+    <RootNamespace>Mntone.Helper.Demo</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Label="Configuration">
@@ -83,16 +83,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="include\DateTimeReference.h" />
-    <ClInclude Include="include\PointReference.h" />
-    <ClInclude Include="include\RectReference.h" />
-    <ClInclude Include="include\SizeReference.h" />
-    <ClInclude Include="include\TimeSpanReference.h" />
-    <ClInclude Include="include\mnhelper.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MntoneCppCxHelper.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>

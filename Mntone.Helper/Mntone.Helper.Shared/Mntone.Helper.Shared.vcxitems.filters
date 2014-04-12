@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)DateTimeHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TimeSpanHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\mnhelper.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\DateTimeReference.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\RectReference.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\SizeReference.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\PointReference.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\TimeSpanReference.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)DataTimeHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TimeSpanHelper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{89434d0e-6827-4f4e-b194-3646628544f1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

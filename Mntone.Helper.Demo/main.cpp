@@ -1,5 +1,7 @@
 #include "pch.h"
-#include "include/mnhelper.h"
+
+#define USE_WIN32_INTEROP
+#include "../Mntone.Helper/Mntone.Helper.Shared/include/mnhelper.h"
 
 using namespace std::chrono;
 using namespace Platform;

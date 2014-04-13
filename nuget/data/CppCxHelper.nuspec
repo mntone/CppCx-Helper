@@ -1,22 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
-    <metadata minClientVersion="2.5">
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
         <id>CppCxHelper</id>
-        <version>0.9.0</version>
+        <version>0.9.1</version>
         <title>C++/CX Helper</title>
         <authors>mntone</authors>
         <owners>mntone</owners>
         <licenseUrl>https://github.com/mntone/CppCx-Helper/blob/master/license.md</licenseUrl>
         <projectUrl>https://github.com/mntone/CppCx-Helper</projectUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
-        <description>You can treat Windows::Foundation::DateTime/TimeSpan (and C/C++ types) more easily. You can also treat Win32 POINT, SIZE, RECT when define USE_WIN32_INTEROP.</description>
+        <description>You can treat Windows::Foundation::DateTime/TimeSpan (and C/C++ types) more easily. You can also treat Win32 POINT, SIZE, RECT when define USE_WIN32_INTEROP.
+
+If you use ~Reference classes, include mnhelper.h.</description>
         <summary>This helps you when developing in C++/CX.</summary>
-        <releaseNotes>First NuGet version.</releaseNotes>
+        <releaseNotes>Add helper methods.</releaseNotes>
         <copyright>Copyright (c) 2014, mntone. All rights reserved.</copyright>
         <language>en-US</language>
         <tags>WinRT Windows WindowsClient WindowsPhone mntone 8.1 C++/CX Helper</tags>
     </metadata>
     <files>
+        <file src="build\native\include\DateTimeReference.h" target="build\native\include\DateTimeReference.h" />
+        <file src="build\native\include\mnhelper.h" target="build\native\include\mnhelper.h" />
+        <file src="build\native\include\PointReference.h" target="build\native\include\PointReference.h" />
+        <file src="build\native\include\RectReference.h" target="build\native\include\RectReference.h" />
+        <file src="build\native\include\SizeReference.h" target="build\native\include\SizeReference.h" />
+        <file src="build\native\include\TimeSpanReference.h" target="build\native\include\TimeSpanReference.h" />
         <file src="build\native\CppCxHelper.targets" target="build\native\CppCxHelper.targets" />
         <file src="lib\win81\ARM\Mntone.Helper.dll" target="lib\win81\ARM\Mntone.Helper.dll" />
         <file src="lib\win81\ARM\Mntone.Helper.pri" target="lib\win81\ARM\Mntone.Helper.pri" />

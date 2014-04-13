@@ -7,6 +7,10 @@ class TimeSpanReference
 {
 public:
 	TimeSpanReference() { }
+	explicit TimeSpanReference( int64 value )
+	{
+		sysTime_ = ::std::chrono::system_clock::duration( value );
+	}
 	explicit TimeSpanReference( ::std::chrono::nanoseconds value )
 	{
 		sysTime_ = ::std::chrono::duration_cast<::std::chrono::system_clock::duration>( value );

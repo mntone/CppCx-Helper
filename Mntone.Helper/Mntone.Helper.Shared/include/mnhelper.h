@@ -8,3 +8,8 @@
 #include "RectReference.h"
 #include "SizeReference.h"
 #endif
+
+#ifndef NOT_USE_VECTOR_EXTENSION
+#define VECTOR_EXTENSION 1
+#include "Collections/Deque.h"
+#endif

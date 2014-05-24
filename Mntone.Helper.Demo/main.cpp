@@ -61,5 +61,27 @@ int main( Array<String^>^ args )
 		? "SizeReference is true."
 		: "SizeReference is false." );
 
+
+	const auto count = 2000;
+	auto timer1 = high_resolution_clock::now();
+	auto vector = ref new Platform::Collections::Vector<String^>();
+	for( auto i = 0; i < count; ++i )
+	{
+		vector->Append( "ap1" );
+		vector->InsertAt( 0, "pre1" );
+	}
+	auto vecTime = high_resolution_clock::now() - timer1;
+	Platform::Details::Console::WriteLine( vecTime.count() );
+
+	auto timer2 = high_resolution_clock::now();
+	auto deque = ref new Platform::Collections::Deque<String^>();
+	for( auto i = 0; i < count; ++i )
+	{
+		deque->Append( "ap1" );
+		deque->Prepend( "pre1" );
+	}
+	auto deqTime = high_resolution_clock::now() - timer2;
+	Platform::Details::Console::WriteLine( deqTime.count() );
+
 	return 0;
 }

@@ -22,6 +22,9 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)include\TimeSpanReference.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\Collections\Deque.h">
+      <Filter>include\Collections</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
@@ -33,6 +36,9 @@
   <ItemGroup>
     <Filter Include="include">
       <UniqueIdentifier>{89434d0e-6827-4f4e-b194-3646628544f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Collections">
+      <UniqueIdentifier>{beb62a66-3326-4227-b6af-60d64fc181e8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata minClientVersion="2.5">
         <id>CppCxHelper</id>
-        <version>0.9.1</version>
+        <version>0.9.3</version>
         <title>C++/CX Helper</title>
         <authors>mntone</authors>
         <owners>mntone</owners>
@@ -13,7 +13,7 @@
 
 If you use ~Reference classes, include mnhelper.h.</description>
         <summary>This helps you when developing in C++/CX.</summary>
-        <releaseNotes>Add helper methods.</releaseNotes>
+        <releaseNotes>Add property helper.</releaseNotes>
         <copyright>Copyright (c) 2014, mntone. All rights reserved.</copyright>
         <language>en-US</language>
         <tags>WinRT Windows WindowsClient WindowsPhone mntone 8.1 C++/CX Helper</tags>
@@ -21,10 +21,12 @@ If you use ~Reference classes, include mnhelper.h.</description>
     <files>
         <file src="build\native\include\DateTimeReference.h" target="build\native\include\DateTimeReference.h" />
         <file src="build\native\include\mnhelper.h" target="build\native\include\mnhelper.h" />
+        <file src="build\native\include\PropertyPreprocessor.h" target="build\native\include\PropertyPreprocessor.h" />
         <file src="build\native\include\PointReference.h" target="build\native\include\PointReference.h" />
         <file src="build\native\include\RectReference.h" target="build\native\include\RectReference.h" />
         <file src="build\native\include\SizeReference.h" target="build\native\include\SizeReference.h" />
         <file src="build\native\include\TimeSpanReference.h" target="build\native\include\TimeSpanReference.h" />
+        <file src="build\native\include\Collections\Deque.h" target="build\native\include\Collections\Deque.h" />
         <file src="build\native\CppCxHelper.targets" target="build\native\CppCxHelper.targets" />
         <file src="lib\win81\ARM\Mntone.Helper.dll" target="lib\win81\ARM\Mntone.Helper.dll" />
         <file src="lib\win81\ARM\Mntone.Helper.pri" target="lib\win81\ARM\Mntone.Helper.pri" />

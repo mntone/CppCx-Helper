@@ -23,6 +23,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)include\SizeReference.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)include\TimeSpanReference.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\PropertyPreprocessor.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)TimeSpanHelper.h" />
   </ItemGroup>
   <ItemGroup>

@@ -22,7 +22,10 @@ rem headers
 cd "./Mntone.Helper/Mntone.Helper.Shared/include/"
 md "../../../nuget/data/build/native/include/"
 copy "*.h" "../../../nuget/data/build/native/include/"
-cd "../../../"
+cd "Collections"
+md "../../../../nuget/data/build/native/include/Collections/"
+copy "*.h" "../../../../nuget/data/build/native/include/Collections/"
+cd "../../../../"
 
 rem Windows Runtime 8.1 component (IA-32/AMD64/ARM)
 cd "./bin/%IA32%-%REL%/%NAME%.Windows/"

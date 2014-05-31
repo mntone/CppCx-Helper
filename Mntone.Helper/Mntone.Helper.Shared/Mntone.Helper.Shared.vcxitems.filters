@@ -25,6 +25,9 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)include\Collections\Deque.h">
       <Filter>include\Collections</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)include\PropertyPreprocessor.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">

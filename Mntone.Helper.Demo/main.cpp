@@ -78,7 +78,8 @@ int main( Array<String^>^ args )
 	for( auto i = 0; i < count; ++i )
 	{
 		deque->Append( "ap1" );
-		deque->Prepend( "pre1" );
+		//deque->Prepend( "pre1" );
+		deque->InsertAt( 0, "pre1" );
 	}
 	auto deqTime = high_resolution_clock::now() - timer2;
 	Platform::Details::Console::WriteLine( deqTime.count() );

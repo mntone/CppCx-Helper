@@ -73,6 +73,31 @@ DateTime DataTimeHelper::FromDateTimeAndNanoseconds( int32 year, int32 month, in
 	return calendar->GetDateTime();
 }
 
+DateTime DataTimeHelper::Add( DateTime target, DateTime value )
+{
+	return DateTime{ target.UniversalTime + value.UniversalTime };
+}
+
+DateTime DataTimeHelper::AddTimeSpan( DateTime target, TimeSpan value )
+{
+	return DateTime{ target.UniversalTime + value.Duration };
+}
+
+DateTime DataTimeHelper::Subtract( DateTime target, DateTime value )
+{
+	return DateTime{ target.UniversalTime - value.UniversalTime };
+}
+
+DateTime DataTimeHelper::SubtractTimeSpan( DateTime target, TimeSpan value )
+{
+	return DateTime{ target.UniversalTime - value.Duration };
+}
+
+int64 DataTimeHelper::Compare( DateTime dateTime1, DateTime dateTime2 )
+{
+	return dateTime2.UniversalTime - dateTime1.UniversalTime;
+}
+
 DateTime DataTimeHelper::Now::get()
 {
 	FILETIME ft;

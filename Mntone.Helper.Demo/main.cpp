@@ -19,7 +19,10 @@ int main( Array<String^>^ args )
 			? "TimeSpanReference is true."
 			: "TimeSpanReference is false." );
 
-	DateTime time_t_datetime = DateTimeReference::FromTimeT( ::time( nullptr ) );
+	auto t = ::time( nullptr );
+	DateTime time_t_datetime = DateTimeReference::FromTimeT( t );
+	FILETIME time_t_filetime = DateTimeReference::FromTimeT( t );
+
 	DateTime chrono_datetime = DateTimeReference( system_clock::now() );
 	DateTime filetime_datetime;
 	{

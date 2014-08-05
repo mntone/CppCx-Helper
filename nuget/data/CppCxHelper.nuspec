@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata minClientVersion="2.5">
         <id>CppCxHelper</id>
-        <version>0.9.3</version>
+        <version>0.9.4</version>
         <title>C++/CX Helper</title>
         <authors>mntone</authors>
         <owners>mntone</owners>
@@ -13,7 +13,7 @@
 
 If you use ~Reference classes, include mnhelper.h.</description>
         <summary>This helps you when developing in C++/CX.</summary>
-        <releaseNotes>Add property helper.</releaseNotes>
+        <releaseNotes>Bug fix and add methods.</releaseNotes>
         <copyright>Copyright (c) 2014, mntone. All rights reserved.</copyright>
         <language>en-US</language>
         <tags>WinRT Windows WindowsClient WindowsPhone mntone 8.1 C++/CX Helper</tags>

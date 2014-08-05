@@ -20,7 +20,7 @@ namespace Mntone { namespace Helper {
 		static Windows::Foundation::TimeSpan Add( Windows::Foundation::TimeSpan target, Windows::Foundation::TimeSpan value );
 		static Windows::Foundation::TimeSpan Subtract( Windows::Foundation::TimeSpan target, Windows::Foundation::TimeSpan value );
 
-		static int32 Compare( Windows::Foundation::TimeSpan timeSpan1, Windows::Foundation::TimeSpan timeSpan2 );
+		static int64 Compare( Windows::Foundation::TimeSpan timeSpan1, Windows::Foundation::TimeSpan timeSpan2 );
 
 		static int64 GetTicks( Windows::Foundation::TimeSpan value );
 		static int64 GetMicroseconds( Windows::Foundation::TimeSpan value );

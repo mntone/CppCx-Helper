@@ -75,12 +75,12 @@ TimeSpan TimeSpanHelper::Add( TimeSpan target, TimeSpan value )
 
 TimeSpan TimeSpanHelper::Subtract( TimeSpan target, TimeSpan value )
 {
-	return TimeSpan{ value.Duration - target.Duration };
+	return TimeSpan{ target.Duration - value.Duration };
 }
 
-int32 TimeSpanHelper::Compare( TimeSpan timeSpan1, TimeSpan timeSpan2 )
+int64 TimeSpanHelper::Compare( TimeSpan timeSpan1, TimeSpan timeSpan2 )
 {
-	return static_cast<int32>( timeSpan2.Duration - timeSpan1.Duration );
+	return timeSpan2.Duration - timeSpan1.Duration;
 }
 
 

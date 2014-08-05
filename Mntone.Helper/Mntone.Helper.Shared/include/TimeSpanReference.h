@@ -45,6 +45,35 @@ public:
 		return sysTime_.count();
 	}
 
+	operator ::std::chrono::nanoseconds() const
+	{
+		return sysTime_;
+	}
+	operator ::std::chrono::system_clock::duration() const
+	{
+		return sysTime_;
+	}
+	operator ::std::chrono::microseconds() const
+	{
+		return ::std::chrono::duration_cast<::std::chrono::microseconds>( sysTime_ );
+	}
+	operator ::std::chrono::milliseconds() const
+	{
+		return ::std::chrono::duration_cast<::std::chrono::milliseconds>( sysTime_ );
+	}
+	operator ::std::chrono::seconds() const
+	{
+		return ::std::chrono::duration_cast<::std::chrono::seconds>( sysTime_ );
+	}
+	operator ::std::chrono::minutes() const
+	{
+		return ::std::chrono::duration_cast<::std::chrono::minutes>( sysTime_ );
+	}
+	operator ::std::chrono::hours() const
+	{
+		return ::std::chrono::duration_cast<::std::chrono::hours>( sysTime_ );
+	}
+
 	operator ::Windows::Foundation::TimeSpan() const
 	{
 		return ::Windows::Foundation::TimeSpan{ sysTime_.count() };

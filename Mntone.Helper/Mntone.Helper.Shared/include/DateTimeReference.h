@@ -38,6 +38,20 @@ public:
 		return dateTime_;
 	}
 
+	operator SYSTEMTIME() const
+	{
+		SYSTEMTIME systemTime;
+		auto fileTime = FILETIME();
+		FileTimeToSystemTime( &fileTime, &systemTime );
+		return systemTime;
+	}
+
+	operator FILETIME() const
+	{
+		auto copiedDateTime = dateTime_;
+		return *reinterpret_cast<FILETIME*>( &copiedDateTime );
+	}
+
 	operator ::Windows::Foundation::DateTime() const
 	{
 		return ::Windows::Foundation::DateTime{ dateTime_ };
